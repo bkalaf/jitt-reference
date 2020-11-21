@@ -1,0 +1,24 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "colors";
+
+$custom-colors: (
+    "caution": $amber,
+    "danger": $red,
+    "highlight": $pink,
+    "secondary": $purple,
+    "primary": $blue,
+    "tertiary": $indigo,
+    "neon": $lime,
+    "warning": $yellow,
+    "attention": $orange,
+    "accent": $light-blue,
+    "emphasis": $light-green,
+    "success": $green,
+    "elegant": $blue-gray,
+    "muted": $brown,
+    "glowing": $cyan,
+    "dark": $black,
+    "light": $white
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);

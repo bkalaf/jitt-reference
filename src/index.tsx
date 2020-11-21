@@ -1,10 +1,13 @@
-import AppRoot from './App';
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './bootstrapper';
+
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
+import {AppRoot, Root} from './components/AppRoot';
 
 ReactDOM.render(
-  <AppRoot />,
-  document.getElementById('root')
+  <Root />,
+  document.getElementById('appRoot')
 );
 
 // If you want to start measuring performance in your app, pass a function
